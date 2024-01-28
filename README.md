@@ -1,4 +1,21 @@
-# Cookbook.dev
+# Hardhat-Cookbook-Boilerplate
+Steps to run, compile and deploy a smart contract on Metis, using the Hardhat boilerplate of Cookbook
+
+
+## Steps:
+
+1. Choose a contract from the Cookbook library and download the Hardhat version. 
+2. Open the downloaded folder with Remix, open a new terminal and run `npm install`
+3. Edit the .env file adding your Wallet private key.
+4. Uncomment the Metis piece of code on the hardhat.config.js file
+5. Go to the deploy.js file and edit the constructorArgs with parameter set according to the specic case of your contract.
+6. Compile with the command `npx hardhat compile`
+7. Deploy to Metis Andromeda mainnet with the command `npx hardhat run --network metisAndromeda scripts/deploy.js`
+8. Check the contract deployment on the Andromeda or Routescan Explorer and paste the contract address you get on your terminal after deploy.
+
+
+
+# Cookbook.dev Readme info:
 
 ## Find any smart contract, build your project faster
 
